@@ -13,7 +13,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EF89DADE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anvil.UnitTests", "Anvil.UnitTests\Anvil.UnitTests.csproj", "{90BEB42D-2B34-40F6-919B-21E840D8C4B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anvil.Tracker.Model", "Anvil.Tracker.Model\Anvil.Tracker.Model.csproj", "{4DFC1D72-E45F-4445-ACBC-7B0AF3F576A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anvil.Tracker.Model", "Anvil.Tracker.Model\Anvil.Tracker.Model.csproj", "{4DFC1D72-E45F-4445-ACBC-7B0AF3F576A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Artifacts", "Artifacts", "{B3E167A6-E647-445B-816C-C8303F4663FC}"
+	ProjectSection(SolutionItems) = preProject
+		Artifacts\AnvilMonitoringTest.dll = Artifacts\AnvilMonitoringTest.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
