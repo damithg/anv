@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anvil.Tracker.Model", "Anvi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Artifacts", "Artifacts", "{B3E167A6-E647-445B-816C-C8303F4663FC}"
 	ProjectSection(SolutionItems) = preProject
-		Artifacts\AnvilMonitoringTest.dll = Artifacts\AnvilMonitoringTest.dll
+		AnvilMonitoringTest.dll = AnvilMonitoringTest.dll
 	EndProjectSection
 EndProject
 Global
