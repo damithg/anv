@@ -11,9 +11,9 @@
 
 ## See Miles
 
-![alt text](https://github.com/damithg/anv/blob/main/Anvil.WebUI/wwwroot/lib/images/miles.png)
+![alt text](https://github.com/damithg/anv/blob/main/Anvil.WebUI/wwwroot/images/miles.png)
 
 
 ## See Unknowns
 
-![alt text](https://github.com/damithg/anv/blob/main/Anvil.WebUI/wwwroot/lib/images/unknown.png)
+![alt text](https://github.com/damithg/anv/blob/main/Anvil.WebUI/wwwroot/images/unknown.png)
