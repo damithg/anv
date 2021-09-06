@@ -1,0 +1,385 @@
+﻿/* general styling */
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.25;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+    table caption {
+        font-size: 1.5em;
+        margin: .5em 0 .75em;
+        caption-side: top;
+    }
+
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+        table caption {
+            font-size: 1.3em;
+            caption-side: top;
+        }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}  
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: #FFF;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFF;
+}
+
+    h3 a {
+        color: #FFF;
+    }
+
+a {
+    color: #FFF;
+}
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 70px;
+    font-family: 'Bree Serif', 'serif';
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 890px;
+}
+
+p {
+    text-align: center;
+}
+
+.dropdown {
+    position: fixed;
+}
+
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #254441;
+}
+
+#logo {
+    display: block;
+    padding: 0 30px;
+    float: left;
+    font-size: 20px;
+    line-height: 60px;
+    color: #f8f8f8;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+    /* Positioning the navigation items inline */
+    nav ul li {
+        margin: 0px;
+        display: inline-block;
+        float: left;
+        background-color: #254441;
+    }
+
+/* Styling the links */
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
+nav ul li ul li:hover {
+    /*background: #000000;*/
+}
+
+/* Background color change on Hover */
+nav a:hover {
+    /*background-color: #000000;*/
+    text-decoration: underline;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    /*top: 60px;*/
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left: 170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after {
+    content: ' +';
+}
+
+li > a:only-child:after {
+    content: '';
+}
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+    #logo {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+        color: #ffffff;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle {
+        display: block;
+        background-color: #254441;
+        padding: 14px 20px;
+        color: #FFF;
+        font-size: 17px;
+        text-decoration: none;
+        border: none;
+    }
+
+        .toggle:hover {
+            /*background-color: #000000;*/
+        }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked + ul {
+        display: block;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }     
+    
+    nav ul ul ul a {
+        background-color: #000000;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        padding: 14px 20px;
+        color: #FFF;
+        font-size: 17px;
+    }
+
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #212121;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+        /* Hide menus on hover */
+        nav ul ul li:hover > ul,
+        nav ul li:hover > ul {
+            display: none;
+        }
+
+        /* Fisrt Tier Dropdown */
+        nav ul ul li {
+            display: block;
+            width: 100%;
+        }
+
+        nav ul ul ul li {
+            position: static;
+            /* has to be the same number as the "width" of "nav ul ul li" */
+        }
+}
+
+@media all and (max-width : 330px) {
+
+    nav ul li {
+        display: block;
+        width: 94%;
+    }
+}
+
+.hero {
+    width: 100%;
+    min-height: 75vh;
+    margin-top: 50px;
+    /* This is what centers it */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: black; 
+    font-weight: 400;
+    font-size: 12vmin;
+    text-align: center;
+    font-size: 15vmin; /* If you want to be extra-fancy */
+    line-height: 110%;
+}

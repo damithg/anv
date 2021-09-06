@@ -1,0 +1,18 @@
+﻿@model AirCraftAltitudeType
+
+<li>
+    <a asp-controller="Home"
+       asp-action="Tracker" data-toggle="dropdown" data-dropdown="category">Unit Type<i class="fa fa-angle-down"></i></a>
+    <ul class="dropdown" id="category">
+        @foreach (var category in Model.Units)
+        {
+            <li>
+                <a asp-controller="Home" asp-action="Tracker"
+                   asp-route-category="@category">@category</a>
+            </li>
+        }  
+        <li>
+            <a asp-controller="Home" asp-action="Tracker" asp-route-Category="">Display All</a>
+        </li>
+    </ul>
+</li>          

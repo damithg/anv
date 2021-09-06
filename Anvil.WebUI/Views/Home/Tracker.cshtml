@@ -1,0 +1,22 @@
+﻿@model AirCraftViewModel
+@{
+    ViewData["Title"] = "Tracker Page";
+}
+
+<table>
+    <caption>Selected unit type : @Model.CurrentUnitType</caption>
+    <thead>
+    <tr>
+        <th scope="col">Altitude Type</th>
+        <th scope="col">Altitude</th>
+        <th scope="col">Velocity Type</th>
+        <th scope="col">Altitude</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.AirCraftModels)
+    {
+        <partial name="_Miles" model="item"/>
+    }
+    </tbody>
+</table>

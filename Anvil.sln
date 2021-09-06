@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anvil.WebUI", "Anvil.WebUI\Anvil.WebUI.csproj", "{93FBF244-12C2-40D6-BDA7-8073061417CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{44E159F0-77D8-42C3-B392-5F4DF68EBB61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anvil.Tracker.Service", "Anvil.Tracker.Service\Anvil.Tracker.Service.csproj", "{5C669834-C72E-4A67-9D85-4B0FB9C63CB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EF89DADE-161D-4C54-A6D4-1DBB6FAAF983}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anvil.UnitTests", "Anvil.UnitTests\Anvil.UnitTests.csproj", "{90BEB42D-2B34-40F6-919B-21E840D8C4B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anvil.Tracker.Model", "Anvil.Tracker.Model\Anvil.Tracker.Model.csproj", "{4DFC1D72-E45F-4445-ACBC-7B0AF3F576A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93FBF244-12C2-40D6-BDA7-8073061417CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FBF244-12C2-40D6-BDA7-8073061417CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FBF244-12C2-40D6-BDA7-8073061417CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FBF244-12C2-40D6-BDA7-8073061417CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C669834-C72E-4A67-9D85-4B0FB9C63CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C669834-C72E-4A67-9D85-4B0FB9C63CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C669834-C72E-4A67-9D85-4B0FB9C63CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C669834-C72E-4A67-9D85-4B0FB9C63CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BEB42D-2B34-40F6-919B-21E840D8C4B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BEB42D-2B34-40F6-919B-21E840D8C4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BEB42D-2B34-40F6-919B-21E840D8C4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BEB42D-2B34-40F6-919B-21E840D8C4B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DFC1D72-E45F-4445-ACBC-7B0AF3F576A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DFC1D72-E45F-4445-ACBC-7B0AF3F576A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DFC1D72-E45F-4445-ACBC-7B0AF3F576A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DFC1D72-E45F-4445-ACBC-7B0AF3F576A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C669834-C72E-4A67-9D85-4B0FB9C63CB9} = {44E159F0-77D8-42C3-B392-5F4DF68EBB61}
+		{90BEB42D-2B34-40F6-919B-21E840D8C4B2} = {EF89DADE-161D-4C54-A6D4-1DBB6FAAF983}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F92264D-99A4-40D9-A573-EB74A50BC4DE}
+	EndGlobalSection
+EndGlobal
